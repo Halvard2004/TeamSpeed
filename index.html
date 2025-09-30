@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlighet test</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div id="app">
+        
+ <!-- Spørsmål 1 -->
+            <div class="question">
+                <p>1. Når du jobber i gruppe, pleier du å...</p>
+                    <label><input type="radio" name="q1" value="Leder"> Ta ansvar og sørge for at alle vet hva de skal gjøre</label><br>
+                    <label><input type="radio" name="q1" value="Tenker"> Tenke ut nye og kreative løsninger</label><br>
+                    <label><input type="radio" name="q1" value="Gjennomfører"> Fokusere på å gjøre oppgavene effektivt og riktig</label><br>
+                    <label><input type="radio" name="q1" value="Støttespiller"> Passe på at alle har det bra og jobber godt sammen</label><br>
+                    <label><input type="radio" name="q1" value="Observatør"> Observere og bidra når det trengs, uten å ta mye plass</label>
+            </div>
+            <!-- Spørsmål 2 -->
+            <div class="question">
+                <p>2. Hva beskriver deg best i en gruppe?</p>
+                    <label><input type="radio" name="q2" value="Leder"> Jeg liker å ta kontroll og sette retning</label><br>
+                    <label><input type="radio" name="q2" value="Tenker"> Jeg utfordrer ideer og foreslår nye løsninger</label><br>
+                    <label><input type="radio" name="q2" value="Gjennomfører"> Jeg holder meg til planen og får ting gjort</label><br>
+                    <label><input type="radio" name="q2" value="Støttespiller"> Jeg hjelper andre og skaper god stemning</label><br>
+                    <label><input type="radio" name="q2" value="Observatør"> Jeg lytter mest og sier noe når det trengs</label>
+            </div>
+
+            <!-- Spørsmål 3 -->
+            <div class="question">
+                <p>3. Hvordan reagerer du når det oppstår et problem i gruppa?</p>
+                    <label><input type="radio" name="q3" value="Leder"> Jeg tar ansvar for å finne en løsning</label><br>
+                    <label><input type="radio" name="q3" value="Tenker"> Jeg analyserer situasjonen og foreslår alternativer</label><br>
+                    <label><input type="radio" name="q3" value="Gjennomfører"> Jeg fokuserer på å få oppgaven løst uansett</label><br>
+                    <label><input type="radio" name="q3" value="Støttespiller"> Jeg prøver å roe ned stemningen og støtte gruppa</label><br>
+                    <label><input type="radio" name="q3" value="Observatør"> Jeg observerer og vurderer før jeg sier noe</label>
+            </div>
+
+            <!-- Spørsmål 4 -->
+            <div class="question">
+                <p>4. Hva gir deg mest glede i gruppearbeid?</p>
+                    <label><input type="radio" name="q4" value="Leder"> Å oppnå gode resultater og lede prosessen</label><br>
+                    <label><input type="radio" name="q4" value="Tenker"> Å få bruke hodet og finne smarte løsninger</label><br>
+                    <label><input type="radio" name="q4" value="Gjennomfører"> Å krysse av ferdige oppgaver</label><br>
+                    <label><input type="radio" name="q4" value="Støttespiller"> Å se at alle trives og jobber godt sammen</label><br>
+                    <label><input type="radio" name="q4" value="Observatør"> Å se hvordan alt utvikler seg</label>
+            </div>
+
+            <!-- Spørsmål 5 -->
+            <div class="question">
+                <p>5. Hvis en gruppe mangler struktur, hva gjør du?</p>
+                    <label><input type="radio" name="q5" value="Leder"> Jeg tar initiativ og foreslår en plan</label><br>
+                    <label><input type="radio" name="q5" value="Tenker"> Jeg foreslår alternative metoder og perspektiver</label><br>
+                    <label><input type="radio" name="q5" value="Gjennomfører"> Jeg lager sjekklister og begynner å jobbe</label><br>
+                    <label><input type="radio" name="q5" value="Støttespiller"> Jeg spør hva andre tenker og bygger samarbeid</label><br>
+                    <label><input type="radio" name="q5" value="Observatør"> Jeg venter og ser hvordan situasjonen utvikler seg</label>
+            </div>
+
+            <div class="submit">
+                <button onclick=completedQuiz()>Fullført</button>
+            </div>
+     
+    </div>
+    
+    <div id="answer">
+        
+    </div>
+    <script src="Controller.js"></script>
+    <script src="Model.js"></script>
+</body>
+</html>
