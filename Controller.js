@@ -13,6 +13,13 @@ function getSelectedAnswers() {
 
 function completedQuiz() {
     const answers = getSelectedAnswers();
+       const sassyComments = {
+        "Leder": "Du elsker å ta kontroll – selv når ingen ba deg om det. Men hey, noen må jo sjefe rundt.",
+        "Tenker": "Gratulerer, du er hjernen bak prosjektet – men pass på, ingen andre forstår helt hva du snakker om.",
+        "Gjennomfører": "Du er den som faktisk får ting gjort. Synd ingen la merke til det fordi lederen tok æren.",
+        "Støttespiller": "Du holder gruppa samlet med varme og forståelse. Og får null kred for det. Klassisk.",
+        "Observatør": "Du sa lite, gjorde lite, men satt der med hevede øyenbryn som om du så på en dårlig realityserie. Respekt."
+    };
     if (!answers) return; // Stop if not all questions were answered
 
     // Count roles
@@ -37,6 +44,7 @@ function completedQuiz() {
         <div>
             <h2>Din teamrolle er: ${topRole}</h2>
             <p>Du valgte flest svar som samsvarer med rollen <strong>${topRole}</strong>.</p>
+            <p><em>${sassyComments[topRole]}</em></p>
         </div>
     `;
     return false;
