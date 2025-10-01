@@ -14,26 +14,11 @@ const lazyModel = {
             }
         }, 
         inputs: {
-
-            questionOne: {
-                result: 0
-            }, 
-            questionTwo: {
-                result: 0
-            },
-            questionThree: {
-                result: 0
-            }, 
-            questionFour: {
-                result: 0
-            }, 
-            questionFive: {
-                result: 0
-            }, 
-
+           thisQuestion: 1,
+           prevQuestion: 0
         }, 
         data: {
             categories: ['Leder', 'Tenker', 'Gjennomfører', 'Støttespiller', 'Observatør'], 
 
         }
-    }
+    };
